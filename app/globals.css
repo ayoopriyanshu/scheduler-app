@@ -49,7 +49,6 @@ input {
 .fc-header-toolbar {
   display: inline-block;
   padding: 4px 4px;
-
   @apply space-x-8;
 }
 
