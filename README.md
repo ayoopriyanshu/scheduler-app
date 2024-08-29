@@ -20,10 +20,7 @@ You can access the live version of the Scheduler App at: https://scheduler-app-t
 
 ## Screenshots
 
-<img src="https://github.com/user-attachments/assets/b1d3cd6c-7049-48f6-8b90-94232f7af795" alt="Light Mode Screenshot" width="600"/>
-<img src="https://github.com/user-attachments/assets/516b780b-d71f-44d8-8823-472af6494d1c" alt="Light Mode Screenshot" width="400"/>
-<img src="https://github.com/user-attachments/assets/e47be4de-6dd5-4d9a-b351-74d254961596" alt="Light Mode Screenshot" width="500"/>
-<img src="https://github.com/user-attachments/assets/0b61500e-9330-46aa-86e2-21a1eb9475cd" alt="Light Mode Screenshot" width="400"/>
+<img src="https://github.com/user-attachments/assets/b1d3cd6c-7049-48f6-8b90-94232f7af795" alt="Light Mode Screenshot" width="600"/><img src="https://github.com/user-attachments/assets/516b780b-d71f-44d8-8823-472af6494d1c" alt="Light Mode Screenshot" width="400"/><img src="https://github.com/user-attachments/assets/e47be4de-6dd5-4d9a-b351-74d254961596" alt="Light Mode Screenshot" width="500"/><img src="https://github.com/user-attachments/assets/0b61500e-9330-46aa-86e2-21a1eb9475cd" alt="Light Mode Screenshot" width="400"/>
 
 ## Installation
 
