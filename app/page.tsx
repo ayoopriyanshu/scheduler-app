@@ -2,7 +2,14 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin, { DropArg } from "@fullcalendar/interaction";
-import { crossIcon, eventIcon, exclIcon } from "./icons/icons.jsx";
+import {
+  crossIcon,
+  eventIcon,
+  exclIcon,
+  githubUrl,
+  gmailUrl,
+  linkedinUrl,
+} from "./icons/icons.jsx";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import { Fragment, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -727,6 +734,49 @@ export default function Home() {
           </Dialog>
         </Transition.Root>
       </main>
+
+      <nav className="flex justify-center mb-0 border-b border-blue-100 p-5">
+        <p
+          className={`text-sm${
+            theme === "dark" ? "text-gray-300" : "text-gray-600"
+          }`}
+        >
+          CREATED BY PRIYANSHU SHARMA
+          <div className="flex justify-center">
+            <a
+              href="https://www.linkedin.com/in/ayoopriyanshu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={linkedinUrl}
+                alt="linkedin/ayoopriyanshu"
+                className="pr-5"
+                title="Linkedin Profile"
+              />
+            </a>
+            <a
+              href="https://github.com/ayoopriyanshu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={githubUrl}
+                alt="github/ayoopriyanshu"
+                className="pr-5"
+                title="Github Profile"
+              />
+            </a>
+            <a
+              href="mailto:priyanshusharma3377@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={gmailUrl} alt="Gmail" title="My Gmail" />
+            </a>
+          </div>
+        </p>
+      </nav>
     </>
   );
 }
