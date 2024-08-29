@@ -40,13 +40,23 @@ export default function Home() {
   });
 
   useEffect(() => {
+    const storedEvents = localStorage.getItem("events");
+    if (storedEvents) {
+      setAllEvents(JSON.parse(storedEvents));
+    }
+  }, []);
+
+  useEffect(() => {
     document.body.className = theme;
   }, [theme]);
+
+  useEffect(() => {
+    localStorage.setItem("events", JSON.stringify(allEvents));
+  }, [allEvents]);
 
   function handleDateClick(arg: { date: Date; allDay: boolean }) {
     setNewEvent({
       ...newEvent,
-      // start: arg.date,
       start: arg.date.toISOString(),
       allDay: arg.allDay,
       id: new Date().getTime(),
@@ -64,7 +74,7 @@ export default function Home() {
       allDay: data.allDay,
       id: new Date().getTime(),
     };
-    setAllEvents([...allEvents, event]);
+    setAllEvents((prevEvents) => [...prevEvents, event]);
   }
 
   function handleDeleteModal(data: { event: { id: string } }) {
@@ -73,9 +83,10 @@ export default function Home() {
   }
 
   function handleDelete() {
-    setAllEvents(
-      allEvents.filter((event) => Number(event.id) !== Number(idToDelete))
+    const updatedEvents = allEvents.filter(
+      (event) => Number(event.id) !== Number(idToDelete)
     );
+    setAllEvents(updatedEvents);
     setShowDeleteModal(false);
     setIdToDelete(null);
   }
