@@ -199,7 +199,7 @@ export default function Home() {
           theme === "dark" ? "text-gray-300" : "text-gray-600"
         }`}
       >
-        *click the note to delete, double click to update
+        *click the event to delete, double click to update
       </p>
       <main className="flex min-h-screen flex-col items-center pt-16">
         <div className="w-full h-full mb-0">
@@ -383,7 +383,7 @@ export default function Home() {
                                 : "text-gray-900"
                             }`}
                           >
-                            Add Note
+                            Add Event
                           </Dialog.Title>
                           <button type="button" onClick={handleCloseModal}>
                             <img src={crossIcon} width="15" height="13" />
